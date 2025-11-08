@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    @apply font-sans text-gray-900;
+  }
+}
+
+@layer components {
+  .nav-blur {
+    @apply bg-white/80 backdrop-blur-md;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-black/5 p-6 shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300;
+  }
+
+  .hover\:scale-103:hover {
+    transform: scale(1.03);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
