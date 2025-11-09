@@ -58,6 +58,21 @@ export const siteConfig = {
     { name: 'E-commerce', slug: 'ecommerce' },
     { name: 'Banking', slug: 'banking' },
     { name: 'Digital', slug: 'digital' },
+     {
+    name: "Healthcare",
+    slug: "healthcare",
+    image: "https://images.pexels.com/photos/532765/pexels-photo-532765.jpeg"
+  },
+  {
+    name: "Fintech",
+    slug: "fintech",
+    image: "https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg"
+  },
+  {
+    name: "Manufacturing",
+    slug: "manufacturing",
+    image: "https://images.pexels.com/photos/276024/pexels-photo-276024.jpeg"
+  },
   ],
 
   projects: [
