@@ -1,12 +1,36 @@
-export default function Projects() {
+import React from "react";
+import CareersHero from "../components/CareersHero";
+import WhatMakesUsSpecial from "../components/WhatMakesUsSpecial";
+import CoreValues from "../components/CoreValues";
+import AdvancementOpportunities from "../components/AdvancementOpportunities";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
+const CareersPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-16">
-      <div className="text-center px-4">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Projects</h1>
-        <p className="text-lg text-gray-600">
-          This page will be implemented by the frontend team.
-        </p>
-      </div>
-    </div>
+    <main className="flex flex-col">      
+      <CareersHero />
+      
+      <section className="my-16">
+        <WhatMakesUsSpecial />
+      </section>
+
+      <section className="my-16">
+        <CoreValues />
+      </section>
+
+      <section className="my-16">
+        <AdvancementOpportunities/>
+      </section>
+
+      <section className="my-16">
+        <ContactSection/>
+      </section>
+      <section className="mt-16">
+        <Footer/>
+      </section>
+
+    </main>
   );
-}
+};
+
+export default CareersPage;
